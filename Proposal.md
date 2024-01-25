@@ -1,10 +1,6 @@
 Title: Puzzles
 Overiew:
-    User make and update account
-    Wishlists mangment
-    Add/remove items from Cart
-    See Past Purchases
-    Search Feature
+    Create a Website where you can purchase puzzles and manage an account on the website
 Scope
     User make and update account
     Wishlists mangment
@@ -25,6 +21,6 @@ Non-Functional
     Caching paswords
     Dynamic Header/Footer
     CSS
-    
+
 
 
