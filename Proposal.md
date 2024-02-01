@@ -1,26 +1,31 @@
-Title: Puzzles
-Overiew:
+## Title
+
+Puzzles
+
+## Overiew
+
     Create a Website where you can purchase puzzles and manage an account on the website
-Scope
+
+## Scope
+
     User make and update account
     Wishlists mangment
     Add/remove items from Cart
     See Past Purchases
     Search Feature
 
-Functional Requrment:
+## Functional Requrment
+
     DataSeed with product info
     Local Storage for cart and purchase or Table
     Four pages:
-        Product 
-        Orders 
+        Product
+        Orders
         Cart
         Account
 
-Non-Functional
+## Non-Functional
+
     Caching paswords
     Dynamic Header/Footer
     CSS
-
-
-
