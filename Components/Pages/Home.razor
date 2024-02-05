@@ -2,6 +2,31 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="main">
+  <ul class="puzzle-cards">
+    @if (puzzles != null)
+    {
+      @foreach (var puzzle in puzzles)
+      {
+        <li style="background-image: url('@puzzle.ImageUrl')">
+          <div class="pizza-info">
+              <span class="title">@puzzle.Name</span>
+                  @puzzle.Description
+                <span class="price">@puzzle.GetFormattedBasePrice()</span>
+          </div>
+        </li>
+      }
+    }
+  </ul>
+</div>
 
-Welcome to your new app.
+@code {
+@using Puzzles.Data;
+
+List<PuzzleList> puzzles = new();
+
+protected override void OnInitialized()
+{
+    puzzles.AddRange(PuzzleData.GetPuzzles());
+}
+}
