@@ -8,13 +8,16 @@
     {
       @foreach (var puzzle in puzzles)
       {
-        <li style="background-image: url('@puzzle.ImageUrl')">
-          <div class="pizza-info">
+        <div>
+        <li>
+          <img  width="200px"src="@puzzle.ImageUrl" alt="Puzzle Image" />
+          <div class="puzzle-info">
               <span class="title">@puzzle.Name</span>
                   @puzzle.Description
                 <span class="price">@puzzle.GetFormattedBasePrice()</span>
           </div>
         </li>
+        </div>
       }
     }
   </ul>
