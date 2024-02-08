@@ -1,0 +1,28 @@
+@page "/cart"
+@rendermode InteractiveServer
+
+<PageTitle>Cart</PageTitle>
+
+<div class="main">
+    <h1>Cart</h1>
+    @if (cart.CartPuzzles.Count() > 0)
+    {
+
+        @foreach (var item in cart.CartPuzzles)
+        {
+            <h2>@item.Name</h2>
+        }
+    }
+    else
+    {
+        <p>There are not items in your cart.</p>
+    }
+</div>
+
+@code {
+    @inject CartState CartState;
+
+    @using Puzzles.Services;
+
+    Cart cart => CartState.Cart;
+}

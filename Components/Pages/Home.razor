@@ -1,4 +1,5 @@
 ﻿@page "/"
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
@@ -8,28 +9,33 @@
     {
       @foreach (var puzzle in puzzles)
       {
-        <div>
         <li>
-          <img  width="200px"src="@puzzle.ImageUrl" alt="Puzzle Image" />
+          <img width="200px" src="@puzzle.ImageUrl" alt="Puzzle Image" />
           <div class="puzzle-info">
-              <span class="title">@puzzle.Name</span>
-                  @puzzle.Description
-                <span class="price">@puzzle.GetFormattedBasePrice()</span>
+            <span class="title">@puzzle.Name</span>
+            @puzzle.Description
+            <span class="price">@puzzle.GetFormattedBasePrice()</span>
           </div>
+          <button class="btn btn-primary" @onclick="() => CartState.AddToCart(puzzle)">Add to cart</button>
         </li>
-        </div>
       }
     }
   </ul>
 </div>
 
+
 @code {
-@using Puzzles.Data;
+  @inject CartState CartState;
 
-List<PuzzleList> puzzles = new();
+  @using Puzzles.Services;
+  @using Puzzles.Data;
 
-protected override void OnInitialized()
-{
+  List<PuzzleList> puzzles = new();
+
+  Cart cart => CartState.Cart;
+
+  protected override void OnInitialized()
+  {
     puzzles.AddRange(PuzzleData.GetPuzzles());
-}
+  }
 }
