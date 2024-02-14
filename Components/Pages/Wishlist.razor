@@ -1,0 +1,23 @@
+@page "/wishlist"
+@inject WishlistState WishlistState
+@using Puzzles.Services
+
+<h3>Wishlist</h3>
+
+@if (WishlistState.Wishlist.WishlistPuzzles.Count > 0)
+{
+    <ul>
+        @foreach (var puzzle in WishlistState.Wishlist.WishlistPuzzles)
+        {
+            <li>@puzzle.Name</li>
+        }
+    </ul>
+}
+else
+{
+    <p>Your wishlist is empty.</p>
+}
+
+@code {
+
+}

@@ -1,13 +1,25 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 
+
 <PageTitle>Home</PageTitle>
 
 <div class="main">
+  <input type="text" @bind="searchTerm" placeholder="Search for puzzles" />
+  <div>
+    <label>Min price: @minPrice</label>
+    <input type="range" @bind="minPrice" @bind:event="oninput" min="0" max="30" step="1" />
+  </div>
+  <div>
+    <label>Max price: @maxPrice</label>
+    <input type="range" @bind="maxPrice" @bind:event="oninput" min="0" max="30" step="1" />
+  </div>
+  <button @onclick="Search">Search</button>
+
   <ul class="puzzle-cards">
-    @if (puzzles != null)
+    @if (filteredPuzzles != null)
     {
-      @foreach (var puzzle in puzzles)
+      @foreach (var puzzle in filteredPuzzles)
       {
         <li>
           <img width="200px" src="@puzzle.ImageUrl" alt="Puzzle Image" />
@@ -17,6 +29,7 @@
             <span class="price">@puzzle.GetFormattedBasePrice()</span>
           </div>
           <button class="btn btn-primary" @onclick="() => CartState.AddToCart(puzzle)">Add to cart</button>
+          <button class="btn btn-secondary" @onclick="() => WishlistState.AddToWishlist(puzzle)">Add to wishlist</button>
         </li>
       }
     }
@@ -26,16 +39,30 @@
 
 @code {
   @inject CartState CartState;
+  @inject WishlistState WishlistState
 
   @using Puzzles.Services;
   @using Puzzles.Data;
 
   List<PuzzleList> puzzles = new();
+  List<PuzzleList> filteredPuzzles = new();
+  string searchTerm = "";
+  decimal minPrice = 0;
+  decimal maxPrice = 30;
 
   Cart cart => CartState.Cart;
+
+  Puzzles.Wishlist wishlist => WishlistState.Wishlist;
+
 
   protected override void OnInitialized()
   {
     puzzles.AddRange(PuzzleData.GetPuzzles());
+    filteredPuzzles = puzzles;
+  }
+
+  void Search()
+  {
+    filteredPuzzles = puzzles.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) && p.BasePrice >= minPrice && p.BasePrice <= maxPrice).ToList();
   }
 }
