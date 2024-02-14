@@ -1,6 +1,7 @@
 ﻿@page "/"
 @rendermode InteractiveServer
 
+
 <PageTitle>Home</PageTitle>
 
 <div class="main">
@@ -28,6 +29,7 @@
             <span class="price">@puzzle.GetFormattedBasePrice()</span>
           </div>
           <button class="btn btn-primary" @onclick="() => CartState.AddToCart(puzzle)">Add to cart</button>
+          <button class="btn btn-secondary" @onclick="() => WishlistState.AddToWishlist(puzzle)">Add to wishlist</button>
         </li>
       }
     }
@@ -37,6 +39,7 @@
 
 @code {
   @inject CartState CartState;
+  @inject WishlistState WishlistState
 
   @using Puzzles.Services;
   @using Puzzles.Data;
@@ -48,6 +51,9 @@
   decimal maxPrice = 30;
 
   Cart cart => CartState.Cart;
+
+  Puzzles.Wishlist wishlist => WishlistState.Wishlist;
+
 
   protected override void OnInitialized()
   {

@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddScoped<CartState>();
+builder.Services.AddScoped<WishlistState>();
 
 var app = builder.Build();
 
@@ -27,8 +28,4 @@ app.UseAntiforgery();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-
-
-
-app.Run();
 app.Run();
