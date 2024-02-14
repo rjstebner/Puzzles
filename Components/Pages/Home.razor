@@ -39,6 +39,7 @@
 
 @code {
   @inject CartState CartState;
+
   @inject WishlistState WishlistState
 
   @using Puzzles.Services;
@@ -63,6 +64,7 @@
 
   void Search()
   {
-    filteredPuzzles = puzzles.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) && p.BasePrice >= minPrice && p.BasePrice <= maxPrice).ToList();
+    filteredPuzzles = puzzles.Where(p => p.Name!.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) && p.BasePrice >=
+    minPrice && p.BasePrice <= maxPrice).ToList();
   }
 }

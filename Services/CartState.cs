@@ -7,7 +7,13 @@ public class CartState
 
     public void AddToCart(PuzzleList puzzle)
     {
-        Cart.CartPuzzles.Add(puzzle);
+        CartPuzzle newPuzzle = new(puzzle.Id, puzzle.Name!, puzzle.ImageUrl!, puzzle.BasePrice);
+        CartPuzzle existingPuzzle = Cart.CartPuzzles.Find(p => p.Id == puzzle.Id)!;
+        if (Cart.CartPuzzles.Find(p => p.Id == puzzle.Id) != null)
+        { existingPuzzle!.Quantity++; }
+        else
+        { Cart.CartPuzzles.Add(newPuzzle); }
+        Cart.CartTotal += puzzle.BasePrice;
     }
 
     public void RemoveFromCart(int puzzleId)
