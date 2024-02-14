@@ -5,6 +5,14 @@
 
 <div class="main">
   <input type="text" @bind="searchTerm" placeholder="Search for puzzles" />
+  <div>
+    <label>Min price: @minPrice</label>
+    <input type="range" @bind="minPrice" @bind:event="oninput" min="0" max="30" step="1" />
+  </div>
+  <div>
+    <label>Max price: @maxPrice</label>
+    <input type="range" @bind="maxPrice" @bind:event="oninput" min="0" max="30" step="1" />
+  </div>
   <button @onclick="Search">Search</button>
 
   <ul class="puzzle-cards">
@@ -36,6 +44,8 @@
   List<PuzzleList> puzzles = new();
   List<PuzzleList> filteredPuzzles = new();
   string searchTerm = "";
+  decimal minPrice = 0;
+  decimal maxPrice = 30;
 
   Cart cart => CartState.Cart;
 
@@ -47,13 +57,6 @@
 
   void Search()
   {
-    if (string.IsNullOrWhiteSpace(searchTerm))
-    {
-      filteredPuzzles = puzzles;
-    }
-    else
-    {
-      filteredPuzzles = puzzles.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
-    }
+    filteredPuzzles = puzzles.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) && p.BasePrice >= minPrice && p.BasePrice <= maxPrice).ToList();
   }
 }
