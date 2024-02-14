@@ -4,10 +4,13 @@
 <PageTitle>Home</PageTitle>
 
 <div class="main">
+  <input type="text" @bind="searchTerm" placeholder="Search for puzzles" />
+  <button @onclick="Search">Search</button>
+
   <ul class="puzzle-cards">
-    @if (puzzles != null)
+    @if (filteredPuzzles != null)
     {
-      @foreach (var puzzle in puzzles)
+      @foreach (var puzzle in filteredPuzzles)
       {
         <li>
           <img width="200px" src="@puzzle.ImageUrl" alt="Puzzle Image" />
@@ -31,11 +34,26 @@
   @using Puzzles.Data;
 
   List<PuzzleList> puzzles = new();
+  List<PuzzleList> filteredPuzzles = new();
+  string searchTerm = "";
 
   Cart cart => CartState.Cart;
 
   protected override void OnInitialized()
   {
     puzzles.AddRange(PuzzleData.GetPuzzles());
+    filteredPuzzles = puzzles;
+  }
+
+  void Search()
+  {
+    if (string.IsNullOrWhiteSpace(searchTerm))
+    {
+      filteredPuzzles = puzzles;
+    }
+    else
+    {
+      filteredPuzzles = puzzles.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+    }
   }
 }
