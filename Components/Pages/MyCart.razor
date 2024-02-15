@@ -7,11 +7,18 @@
     <h1>Cart</h1>
     @if (cart.CartPuzzles.Count() > 0)
     {
-
-        @foreach (var item in cart.CartPuzzles)
-        {
-            <h2>@item.Name</h2>
-        }
+        <div class="puzzle-cards">
+            @foreach (var item in cart.CartPuzzles)
+            {
+                <div>
+                    <img src="@item.ImageUrl" width="200px" />
+                    <p style="font-size: 18px;">@item.Name</p>
+                    <p>@item.GetFormattedBasePrice()</p>
+                    <p>Qty: @item.Quantity</p>
+                </div>
+            }
+        </div>
+        <h2>Total: @cart.GetFormattedTotal()</h2>
     }
     else
     {

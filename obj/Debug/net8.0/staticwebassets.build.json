@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lMFGnlUfM0O9cyr6v9nTVnU25HcnrAq8+Iiv3k9qayo=",
+  "Hash": "HhIn07oiSvgoQSGKJ6BHYIdhfuLqeEWMIa+0CTsbaeI=",
   "Source": "Puzzles",
   "BasePath": "_content/Puzzles",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Puzzles\\wwwroot",
       "Source": "Puzzles",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
       "BasePath": "_content/Puzzles",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css",
       "SourceId": "Puzzles",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "Puzzles.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css"
+      "OriginalItemSpec": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css"
     },
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css",
       "SourceId": "Puzzles",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "Puzzles.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css"
+      "OriginalItemSpec": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\app.css",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\app.css",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\favicon.png",
+      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\favicon.png",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Randy_Learns_Code\\GroupProj\\Puzzles\\wwwroot\\",
+      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
       "BasePath": "_content/Puzzles",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
