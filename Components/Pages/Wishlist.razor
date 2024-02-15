@@ -1,6 +1,6 @@
 @page "/wishlist"
-@inject WishlistState WishlistState
-@using Puzzles.Services
+@rendermode InteractiveServer
+
 
 <h3>Wishlist</h3>
 
@@ -9,7 +9,11 @@
     <ul>
         @foreach (var puzzle in WishlistState.Wishlist.WishlistPuzzles)
         {
-            <li>@puzzle.Name</li>
+            <li>
+                @puzzle.Name
+                <button @onclick="() => WishlistState.RemoveFromWishlist(puzzle)">Remove from Wishlist</button>
+                <button @onclick="() => CartState.AddToCart(puzzle)">Add to Cart</button>
+            </li>
         }
     </ul>
 }
@@ -19,5 +23,10 @@ else
 }
 
 @code {
+    @inject WishlistState WishlistState
+    @inject CartState CartState
+    @using Puzzles.Services
+    Puzzles.Wishlist wishlist => WishlistState.Wishlist;
+
 
 }
