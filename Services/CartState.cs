@@ -18,8 +18,8 @@ public class CartState
 
     public void RemoveFromCart(int puzzleId)
     {
-        var removePuzzle = Cart.CartPuzzles?.Where(i => i.Id == puzzleId).First();
-        if (removePuzzle != null)
-            Cart.CartPuzzles?.Remove(removePuzzle);
+        CartPuzzle existingPuzzle = Cart.CartPuzzles.Find(p => p.Id == puzzleId)!;
+        if (existingPuzzle != null)
+            Cart.CartPuzzles?.Remove(existingPuzzle);
     }
 }

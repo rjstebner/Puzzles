@@ -14,4 +14,14 @@ public class WishlistState
     {
         Wishlist.WishlistPuzzles.Remove(puzzle);
     }
+
+    public bool InWishlist(PuzzleList puzzle)
+    {
+        var wishlist = Wishlist.WishlistPuzzles.Find(p => p.Id == puzzle.Id);
+        if (wishlist == null)
+        {
+            return false;
+        }
+        return true;
+    }
 }
