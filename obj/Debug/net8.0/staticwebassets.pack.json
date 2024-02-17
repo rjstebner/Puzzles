@@ -1,39 +1,39 @@
 {
   "Files": [
     {
-      "Id": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Puzzles.bundle.scp.css"
+      "Id": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/projectbundle/Puzzles.bundle.scp.css",
+      "PackagePath": "staticwebassets/Puzzles.bundle.scp.css"
     },
     {
-      "Id": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+      "Id": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+      "Id": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\favicon.png",
-      "PackagePath": "staticwebassets\\favicon.png"
+      "Id": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Puzzles.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Puzzles.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Puzzles.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Puzzles.props",
       "PackagePath": "build\\Puzzles.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Puzzles.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Puzzles.props",
       "PackagePath": "buildMultiTargeting\\Puzzles.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Puzzles.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Puzzles.props",
       "PackagePath": "buildTransitive\\Puzzles.props"
     }
   ],

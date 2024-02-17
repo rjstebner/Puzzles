@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HhIn07oiSvgoQSGKJ6BHYIdhfuLqeEWMIa+0CTsbaeI=",
+  "Hash": "vg1BCuG+NWmUxBX6bqq0N4uYP95Qg2sOrH/hKmJyD4I=",
   "Source": "Puzzles",
   "BasePath": "_content/Puzzles",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Puzzles\\wwwroot",
+      "Name": "Puzzles/wwwroot",
       "Source": "Puzzles",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/",
       "BasePath": "_content/Puzzles",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/bundle/Puzzles.styles.css",
       "SourceId": "Puzzles",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "Puzzles.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Puzzles.styles.css"
+      "OriginalItemSpec": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/bundle/Puzzles.styles.css"
     },
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/projectbundle/Puzzles.bundle.scp.css",
       "SourceId": "Puzzles",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "Puzzles.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Puzzles.bundle.scp.css"
+      "OriginalItemSpec": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/Debug/net8.0/scopedcss/projectbundle/Puzzles.bundle.scp.css"
     },
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\app.css",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/app.css",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\app.css"
+      "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\favicon.png",
+      "Identity": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/favicon.png",
       "SourceId": "Puzzles",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\wwwroot\\",
+      "ContentRoot": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/wwwroot/",
       "BasePath": "_content/Puzzles",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -128,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
+      "OriginalItemSpec": "wwwroot/favicon.png"
     }
   ]
 }
