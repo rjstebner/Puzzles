@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Puzzles.Components;
+using Puzzles.Data;
 using Puzzles.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddDbContext<UserDataContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("UserDataContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesMovieContext' not found.")));
 
 builder.Services.AddScoped<CartState>();
 builder.Services.AddScoped<WishlistState>();

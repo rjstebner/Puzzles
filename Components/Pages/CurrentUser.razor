@@ -1,0 +1,60 @@
+@* @page "/userdb"
+using Puzzles.Data;
+using Puzzles.Models;
+
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.User) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+@code{
+    
+public class Model 
+    {
+        private readonly Puzzles.Data.UserDataContext _context;
+
+        public Model(Puzzles.Data.UserDataContext context)
+        {
+            _context = context;
+        }
+
+        public IList<User> User { get;set; } = default!;
+
+        public async Task OnGetAsync()
+        {
+            User = await _context.User.ToListAsync();
+        }
+    }
+} *@

@@ -1,0 +1,82 @@
+@page "/user"
+
+@rendermode InteractiveServer
+@* @inject ILogger<SignUp> Logger *@
+@inject Puzzles.Data.UserDataContext Context
+@using Puzzles.Models
+
+
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <EditForm Model="Model" OnSubmit="Submit" FormName="signup-form">
+            @* <div asp-validation-summary="ModelOnly" class="text-danger"></div> *@
+            <div class="form-group">
+                <label>
+                    <InputText @bind-Value="Model!.Username" />
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model.Password" class="control-label">
+                    <InputText @bind-Value="Model!.Password" />
+                </label>
+
+                @* <span asp-validation-for="Model.password" class="text-danger"></span> *@
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+                @if (yesPass != null)
+{
+  <h4>
+    @yesPass
+  </h4>
+}
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+    <div>
+        <span>New here? </span><a href='/SignUp'>Sign up!</a>
+    </div>
+
+
+@code {
+
+    [SupplyParameterFromForm]
+    public UserModel? Model { get; set; }
+
+    protected override void OnInitialized() => Model ??= new();
+
+    
+    string yesPass;
+    public void Submit()
+    {
+         string signinUser = Model.Username;
+         string signinPass = Model.Password;
+          var existingPass = Context.User.Where(e => e.Username == Model.Username).FirstOrDefault();
+           var exist = existingPass.Password;
+           string existing = exist.ToString();
+           if(Model.Password == existing){
+            yesPass = "You are now logged in";
+        }
+        else{
+            yesPass = "Incorrect Password";
+        }
+           
+           }
+
+    @* RenderFragment logIn(string existing){
+        if(Model.Password == existing){
+            return @<p>You are logged in</p>;
+        }
+        else{
+            return @<p>Incorrect password</p>;
+        }
+    } *@
+        
+
+
+}
