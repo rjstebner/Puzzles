@@ -65,12 +65,23 @@ h1:focus {
   list-style: none;
 }
 
-.btn-wishlist {
+.btn-wishlist,
+.btn-wishlist-remove {
+  height: 38px;
+  width: 56px;
   background-color: #e50000;
+  background-image: url('data:image/svg+xml,<svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.4103 12.7179C20.1041 17.0281 13.1282 24 13.1282 24C13.1282 24 6.35707 17.2308 1.8452 12.718C0.818623 11.6912 -7.92531e-06 9.53846 0 7.58974C1.70475e-05 3.39804 3.39804 2.42787e-06 7.58974 0C11.0227 -1.98838e-06 13.1282 2.46154 13.1282 2.46154C13.1282 2.46154 15.076 0 18.6667 0C22.8584 0 26.2564 3.39804 26.2564 7.58974C26.2564 9.53846 25.4349 11.6923 24.4103 12.7179Z" fill="%23FFFFFF"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid #e50000;
 }
 
-.btn-wishlist-remove {
-  background-color: #e50000;
-  display: inline-grid;
-  grid-template-columns: 15px 15px;
+.btn-wishlist:hover {
+  background-image: url('data:image/svg+xml,<svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.4103 12.7179C20.1041 17.0281 13.1282 24 13.1282 24C13.1282 24 6.35707 17.2308 1.8452 12.718C0.818623 11.6912 -7.92531e-06 9.53846 0 7.58974C1.70475e-05 3.39804 3.39804 2.42787e-06 7.58974 0C11.0227 -1.98838e-06 13.1282 2.46154 13.1282 2.46154C13.1282 2.46154 15.076 0 18.6667 0C22.8584 0 26.2564 3.39804 26.2564 7.58974C26.2564 9.53846 25.4349 11.6923 24.4103 12.7179Z" fill="%23E50000"/></svg>');
+  background-color: white;
+}
+
+.btn-wishlist-remove:hover {
+  background-image: url('data:image/svg+xml,<svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.8452 12.718C6.35707 17.2308 13.1282 24 13.1282 24L14.1538 18.4615L10.8718 15.3846L14.1538 10.6667L10.8718 6.5641L13.1282 2.46154C13.1282 2.46154 11.0227 -1.98838e-06 7.58974 0C3.39804 2.42787e-06 1.70475e-05 3.39804 0 7.58974C-7.92531e-06 9.53846 0.818622 11.6912 1.8452 12.718Z" fill="%23E50000"/><path d="M15.359 2.46154L13.1026 6.5641L16.3846 10.6667L13.1026 15.3846L16.3846 18.4615L15.359 24L26.641 12.718C27.7692 11.5897 28.4872 9.33333 28.4872 7.58974C28.4872 3.39804 25.0891 2.08939e-06 20.8974 0C17.2051 0 15.359 2.46154 15.359 2.46154Z" fill="%23E50000"/></svg>');
+  background-color: white;
 }

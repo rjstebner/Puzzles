@@ -32,33 +32,12 @@
 
           @if (WishlistState.InWishlist(puzzle))
           {
-            <button class="btn btn-wishlist-remove" @onclick="() => WishlistState.RemoveFromWishlist(puzzle)">
-              <svg width="15" height="24" viewBox="0 0 69 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8.99536 62C30.9907 84 64 117 64 117L69 90L53 75L69 52L53 32L64 12C64 12 53.7355 -9.69335e-06 37 0C16.5655 1.18359e-05 8.31068e-05 16.5655 0 37C-3.86359e-05 46.5 3.99078 56.9944 8.99536 62Z"
-                  fill="white" />
-              </svg>
-
-              <svg width="15" height="24" viewBox="0 0 75 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M66 62C45.0075 83.0121 11 117 11 117L16 90L0 75L16 52L0 32L11 12C11 12 20.4954 0 38 0C58.4346 0 75 16.5655 75 37C75 46.5 70.9954 57 66 62Z"
-                  fill="white" />
-              </svg>
-            </button>
+            <button class="btn btn-wishlist-remove" @onclick="() => WishlistState.RemoveFromWishlist(puzzle)"></button>
           }
           else
           {
-            <button class="btn btn-wishlist" @onclick="() => WishlistState.AddToWishlist(puzzle)">
-              <svg width="30" height="24" viewBox="0 0 134 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M122.005 62C101.012 83.0121 67.0047 117 67.0047 117C67.0047 117 33.9954 84 12 62C6.99542 56.9944 3.0046 46.5 3.00464 37C3.00472 16.5655 19.5701 1.18359e-05 40.0046 0C56.7401 -9.69335e-06 67.0046 12 67.0046 12C67.0046 12 76.5 0 94.0047 0C114.439 0 131.005 16.5655 131.005 37C131.005 46.5 127 57 122.005 62Z"
-                  fill="white" />
-              </svg>
-
-            </button>
+            <button class="btn btn-wishlist" @onclick="() => WishlistState.AddToWishlist(puzzle)"></button>
           }
-
-
         </li>
       }
     }
