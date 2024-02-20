@@ -57,12 +57,73 @@ h1:focus {
 .darker-border-checkbox.form-check-input {
   border-color: #929292;
 }
+
+.seach-section {
+  width: 320px;
+  border-style: solid;
+  border-color: #01132B;
+  background-color: #adb5bd;
+}
+
+.search-area {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  vertical-align: auto;
+}
+
+.seach-sliders {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  vertical-align: auto;
+  padding-left: 20px;
+}
+
+.search-input {
+  margin-right: 5px;
+}
+
 .puzzle-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1cap;
-  justify-items: center;
+  text-align: center;
+  text-wrap:stable;
   list-style: none;
+  background-color: #01132B;
+  color: #adb5bd;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.puzzel-pic {
+  padding-top: 15px;
+}
+
+.title {
+  font-size: larger;
+  color: white;
+  font: bold;
+  font-style: oblique;
+  padding-top: 5px;
+}
+
+.puzzel-desc {
+  font-size: small;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  height: 20px;
+}
+
+.price {
+  color: lightblue;
+  padding-top: 10px;
 }
 
 .btn-wishlist,
@@ -85,3 +146,4 @@ h1:focus {
   background-image: url('data:image/svg+xml,<svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.8452 12.718C6.35707 17.2308 13.1282 24 13.1282 24L14.1538 18.4615L10.8718 15.3846L14.1538 10.6667L10.8718 6.5641L13.1282 2.46154C13.1282 2.46154 11.0227 -1.98838e-06 7.58974 0C3.39804 2.42787e-06 1.70475e-05 3.39804 0 7.58974C-7.92531e-06 9.53846 0.818622 11.6912 1.8452 12.718Z" fill="%23E50000"/><path d="M15.359 2.46154L13.1026 6.5641L16.3846 10.6667L13.1026 15.3846L16.3846 18.4615L15.359 24L26.641 12.718C27.7692 11.5897 28.4872 9.33333 28.4872 7.58974C28.4872 3.39804 25.0891 2.08939e-06 20.8974 0C17.2051 0 15.359 2.46154 15.359 2.46154Z" fill="%23E50000"/></svg>');
   background-color: white;
 }
+

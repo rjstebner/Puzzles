@@ -1202,32 +1202,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\garre\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/craigconover/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\Puzzles.csproj",
+      "projectUniqueName": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/Puzzles.csproj",
       "projectName": "Puzzles",
-      "projectPath": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\Puzzles.csproj",
-      "packagesPath": "C:\\Users\\garre\\.nuget\\packages\\",
-      "outputPath": "E:\\PublicDrive\\School\\BYU\\CSE 325 - .Net Software Dev\\Puzzles\\obj\\",
+      "projectPath": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/Puzzles.csproj",
+      "packagesPath": "/Users/craigconover/.nuget/packages/",
+      "outputPath": "/Users/craigconover/Documents/CSE325TeamProject/Puzzles/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\garre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/craigconover/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1240,6 +1233,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1278,7 +1276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
