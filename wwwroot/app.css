@@ -151,7 +151,8 @@ h1:focus {
   background-color: #e50000;
   color: white;
   width: 200px;
-  border-radius: 5px;
+  height: 38px;
+  border-radius: 0.25rem;
 }
 .btn-cart-remove:hover {
   background-color: #f93e3e;
