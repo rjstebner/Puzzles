@@ -61,7 +61,7 @@ h1:focus {
 .seach-section {
   width: 320px;
   border-style: solid;
-  border-color: #01132B;
+  border-color: #01132b;
   background-color: #adb5bd;
 }
 
@@ -88,9 +88,9 @@ h1:focus {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1cap;
   text-align: center;
-  text-wrap:stable;
+  text-wrap: stable;
   list-style: none;
-  background-color: #01132B;
+  background-color: #01132b;
   color: #adb5bd;
   margin-top: 10px;
   padding-top: 20px;
@@ -147,3 +147,12 @@ h1:focus {
   background-color: white;
 }
 
+.btn-cart-remove {
+  background-color: #e50000;
+  color: white;
+  width: 200px;
+  border-radius: 5px;
+}
+.btn-cart-remove:hover {
+  background-color: #f93e3e;
+}

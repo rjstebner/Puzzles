@@ -15,6 +15,7 @@
                     <p style="font-size: 18px;">@item.Name</p>
                     <p>@item.GetFormattedBasePrice()</p>
                     <p>Qty: @item.Quantity</p>
+                    <button class="btn-cart-remove" @onclick="() => CartState.RemoveFromCart(item.Id)">X</button>
                 </div>
             }
         </div>
