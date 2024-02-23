@@ -14,7 +14,7 @@
                     <img src="@item.ImageUrl" width="150px" class="cart-card-img" />
                     <div class="cart-card-info">
                         <p class="cart-card-name">@item.Name</p>
-                        <div class="card-card-price">
+                        <div class="cart-card-price">
                             <p>@item.GetFormattedBasePrice()</p>
                             <p>Qty:
                                 <span @onclick="() => {
@@ -49,8 +49,10 @@
                     </div>
                 </div>
             }
+            <h2 class="cart-total">Total: @cart.GetFormattedTotal()</h2>
+
+            <a href="/checkout" class="cart-checkout">Checkout</a>
         </div>
-        <h2 class="cart-total">Total: @cart.GetFormattedTotal()</h2>
     }
     else
     {
