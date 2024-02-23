@@ -24,6 +24,7 @@
             <h2 class="cart-total">Total: @cart.GetFormattedTotal()</h2>
 
             <button class="cart-checkout" @onclick="() => {
+                    // Empty the cart
                     cart.CartPuzzles = []; 
                     PlaceOrder();
                 }">Place order</button>
@@ -46,6 +47,7 @@
 
     void PlaceOrder()
     {
+        // Navigate to the order-confirmation page
         NavManager.NavigateTo("/order-confirm");
     }
 }

@@ -18,17 +18,23 @@
                             <p>@item.GetFormattedBasePrice()</p>
                             <p>Qty:
                                 <span @onclick="() => {
-                                        cart.CartTotal -= item.BasePrice;
+                                    // Subtract the puzzle's base price from the cart total
+                                    cart.CartTotal -= item.BasePrice;
+                                    // If the quantity of the puzzle is more than 1
                                     if(item.Quantity > 1)
                                     {
+                                        // Lower the quantity by 1
                                         item.Quantity--;
                                     } else {
+                                        // Remove the puzzle from the cart
                                         CartState.RemoveFromCart(item.Id);
                                     }
                                 }">-</span>
                                 @item.Quantity
                                 <span @onclick="() => {
+                                    // Increase the puzzle's quantity in the cart
                                     item.Quantity++;
+                                    // Increase the cart's total by the puzzle's base price
                                     cart.CartTotal += item.BasePrice;
                                 }">+</span>
                             </p>
